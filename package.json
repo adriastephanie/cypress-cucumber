@@ -1,0 +1,29 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "test cypress",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriastephanie/cypress-cucumber.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Adria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adriastephanie/cypress-cucumber/issues"
+  },
+  "homepage": "https://github.com/adriastephanie/cypress-cucumber#readme",
+  "devDependencies": {
+    "cypress": "^9.5.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/step"
+}
+}

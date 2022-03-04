@@ -1,0 +1,8 @@
+{
+  "video": false,
+  "baseUrl": "https://trello.com",
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "IgnoreTestFiles": "*.js",
+  "testFiles" : " **/*.{feature,features}"
+}
