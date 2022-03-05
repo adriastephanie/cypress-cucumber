@@ -1,3 +1,4 @@
+import '../../support/commands'
 
 Given("acesso a pagina de login", () => {
     cy.acessarLogin();

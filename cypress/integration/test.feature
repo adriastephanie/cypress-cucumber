@@ -1,6 +1,6 @@
-Feature: Login site CWI
+Feature: Login site Trello
 
-    Scenario: Visualizar opção de recuperar senha esquecida
+    Scenario: Acesso a pagina de login com senha errada
         Given acesso a pagina de login
         When preencher formulario de login
         Then devo mostrar erro

@@ -25,5 +25,5 @@
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/integration/step"
-}
+  }
 }

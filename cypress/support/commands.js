@@ -1,15 +1,16 @@
+import loc from './element'
+
 Cypress.Commands.add('acessarLogin', () => {
     cy.visit('/login')
 })
 
 Cypress.Commands.add('inputForm', () => {
-    cy.visit('/login');
-    cy.get('#user').type('adria@teste.com');
-    cy.get('#password').type('123456');
-    cy.get('#login').click();
+    cy.get(loc.LOGIN.USER).type('adria@teste.com');
+    cy.get(loc.LOGIN.PASSWORD).type('123456');
+    cy.get(loc.LOGIN.BTN_LOGIN).click();
 })
 
 Cypress.Commands.add('errorForm', () => {
-    cy.get('#error').should('contain', "There isn't an account for this email");
+    cy.get(loc.LOGIN.MESSAGE).should('contain', "There isn't an account for this email");
 
 })
